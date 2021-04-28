@@ -81,6 +81,7 @@ func (c *Channel) Get(key *ari.Key) *ari.ChannelHandle {
 // the new channel onto the correct Asterisk node and for assigning default
 // values for communications parameters such as codecs.
 func (c *Channel) Originate(referenceKey *ari.Key, req ari.OriginateRequest) (*ari.ChannelHandle, error) {
+	fmt.Println("foooooooooooooooooooooooo")
 	h, err := c.StageOriginate(referenceKey, req)
 	if err != nil {
 		return nil, err
