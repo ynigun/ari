@@ -121,7 +121,7 @@ func (c *Channel) StageOriginate(referenceKey *ari.Key, req ari.OriginateRequest
 // differences between originate and create.
 func (c *Channel) Create(key *ari.Key, req ari.ChannelCreateRequest) (*ari.ChannelHandle, error) {
 	if key != nil && req.Originator == "" && key.Kind == ari.ChannelKey {
-		req.Originator = key.ID
+//		req.Originator = key.ID
 	}
 
 	if req.ChannelID == "" {
