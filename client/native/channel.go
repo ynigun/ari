@@ -97,7 +97,7 @@ func (c *Channel) Originate(referenceKey *ari.Key, req ari.OriginateRequest) (*a
 // values for communications parameters such as codecs.
 func (c *Channel) StageOriginate(referenceKey *ari.Key, req ari.OriginateRequest) (*ari.ChannelHandle, error) {
 	if referenceKey != nil && req.Originator == "" && referenceKey.Kind == ari.ChannelKey {
-		req.Originator = referenceKey.ID
+//		req.Originator = referenceKey.ID
 	}
 
 	if req.ChannelID == "" {
